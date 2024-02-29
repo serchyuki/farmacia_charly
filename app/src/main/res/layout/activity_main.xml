@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-
-    <?xml version="1.0" encoding="utf-8"?>
 
     <TextView
         android:id="@+id/textView"
@@ -21,7 +17,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.031" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -33,19 +29,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.029"
-        app:srcCompat="@drawable/cart_2" />
+        app:srcCompat="@drawable/cart_2"
+        android:contentDescription="Acceso al carrito"/>
 
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="83dp"
         android:layout_height="59dp"
+        android:layout_marginStart="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029"
-        app:srcCompat="@android:drawable/ic_menu_search" />
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        android:contentDescription="Boton de busqueda"/>
 
     <menu
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,16 +52,16 @@
 
         <item
             android:id="@+id/new_game"
+            android:contentDescription="no se"
             android:icon="@drawable/ic_new_game"
             android:title="@string/new_game"
-            app:showAsAction="ifRoom"
-            android:contentDescription="no se"/>
+            app:showAsAction="ifRoom" />
 
         <item
             android:id="@+id/help"
+            android:contentDescription="boton de busqueda"
             android:icon="@drawable/ic_help"
-            android:title="@string/help"
-            android:contentDescription="boton de busqueda"/>
+            android:title="@string/help" />
     </menu>
 
 

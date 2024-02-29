@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Farmacia2</string>
+    <string name="new_game">New Game</string>
+    <string name="help">Help</string>
+
+    <drawable name="ic_help">Ic_help</drawable>
+    <drawable name="ic_new_game">Ic_new_game</drawable>
 </resources>
